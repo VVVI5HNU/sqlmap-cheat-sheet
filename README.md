@@ -24,7 +24,7 @@ Use SQLMap **only on applications you own or have explicit permission to test**.
 SQLMap can test **every parameter present in the HTTP request body, headers, and URL** using a raw request file.
 
 ```bash
-sqlmap -r demo.txt --dbs
+sqlmap -r demo.txt --dbs --batch --dbms=mysql --tables --dump --threads=3
 ```
 
 ### What this does:
